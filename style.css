@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #5f6a6a;
+    color: #f3f3f3;
+    padding: 20px;
+}
+
+.my-1{
+    margin: 15px 0;
+    color: black;
+}
+
+button{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+    outline: none;
+    border: 2px solid blueviolet;
+    padding: 10px;
+    resize: vertical; 
+
+    
+@media (max-width: 768px) {
+    textarea {
+        width: 90%;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    textarea {
+        width: 85%;
+        height: 150px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
